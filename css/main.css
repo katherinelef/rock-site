@@ -27,6 +27,7 @@
 /* fin de menú hamburguesa */
 
 * {
+  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
@@ -50,14 +51,11 @@ nav {
 .nav-left {
   font-size: 1.25rem;
   float: left;
+  padding-left: 35px;
 }
 
 .nav-right {
   float: right;
-}
-
-.none {
-  display: none;
 }
 
 h1 {
@@ -89,6 +87,7 @@ h2 {
 .text-rock, figure {
   color: #393939;
   padding: 3rem 4.5rem;
+  display: inline-block;
 }
 
 .text-rock p {
@@ -102,4 +101,49 @@ h2 {
 
 footer {
   padding: 3rem;
+}
+
+.col-section {
+  width: 100%;
+}
+
+.view-mobile {
+  display: block;
+}
+
+.view-desktop {
+  display: none;
+}
+
+/* estilos solo para desktop*/
+ul li {
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+@media (min-width: 768px) {
+   .col-section {
+    width: 50%;
+    float: left;
+  }
+
+  section {
+    overflow: auto;
+  }
+
+  .text-rock {
+    padding: 10.5rem 4.5rem;
+  }
+
+  .overlay {
+    padding: 10rem 0;
+  }
+  
+  .view-mobile {
+    display: none;
+  }
+  
+  .view-desktop {
+    display: block;
+  }
 }
