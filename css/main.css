@@ -25,3 +25,81 @@
   top: 8px;
 }
 /* fin de menú hamburguesa */
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.bg-reverse {
+  background-color: #383e42;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+nav {
+  padding: 14px;
+  overflow: hidden;
+}
+
+.nav-left {
+  font-size: 1.25rem;
+  float: left;
+}
+
+.nav-right {
+  float: right;
+}
+
+.none {
+  display: none;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-header {
+  background-image: url("../assets/images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5rem 0;
+}
+
+.text-rock, figure {
+  color: #393939;
+  padding: 3rem 4.5rem;
+}
+
+.text-rock p {
+  line-height: 1.5;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 100%;
+}
+
+footer {
+  padding: 3rem;
+}
