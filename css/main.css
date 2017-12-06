@@ -88,6 +88,7 @@ h2 {
   color: #393939;
   padding: 3rem 4.5rem;
   display: inline-block;
+  align-self: center;
 }
 
 .text-rock p {
@@ -129,10 +130,13 @@ ul li {
 
   section {
     overflow: auto;
+    display: flex;
   }
 
   .text-rock {
-    padding: 10.5rem 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .overlay {
@@ -145,5 +149,11 @@ ul li {
   
   .view-desktop {
     display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  section{
+    margin: 0 10rem;
   }
 }
